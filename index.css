@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  top: 0px;
+  overflow-x: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+#upper {
+  width: 100vw;
+  margin: 0px auto;
+  background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+  height: 450px;
+  max-height: 700px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  position: sticky;
+  top: 0px;
+  padding: 15px;
+  width: 90vw;
+  margin: auto;
+}
+
+.navbarleft {
+  display: flex;
+  width: 20vw;
+}
+.navbarbtn {
+  background-color: rgb(27, 183, 110);
+  color: white;
+  display: flex;
+  align-items: center;
+  border: 0px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 15px;
+  margin: auto 20px;
+  height: 30px;
+  padding: 7px 14px 10px 9px;
+}
+
+.navbarbtn img {
+  padding-top: 5px;
+}
+.navbarbtn > a {
+  text-decoration: none;
+  color: #fff;
+}
+.navbarcenter {
+  width: 45vw;
+  height: 35px;
+  align-items: center;
+  border-radius: 3px;
+  margin: auto;
+  align-items: center;
+  flex: 1 1 0%;
+  justify-content: space-around;
+  background-color: rgb(69, 68, 105);
+}
+.searchBox {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.searchBox input {
+  width: 100%;
+  padding: 5px 5px 2px 5px;
+  align-items: center;
+  background-color: inherit;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+.searchBox button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+
+.rightNav {
+  display: flex;
+  width: 25vw;
+  margin-left: 100px;
+}
+.badge {
+  margin-right: 10px;
+}
+.badge:hover {
+  color: rgb(69, 68, 105);
+}
+.rightButtons {
+  display: flex;
+}
+.rightButtons button {
+  align-items: center;
+  border: 0px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 15px;
+
+  height: 35px;
+  color: white;
+
+  padding: 7px 14px 10px 9px;
+}
+.rightButtons :nth-child(1) {
+  background-color: rgb(100, 50, 249);
+}
+.rightButtons :nth-child(2) {
+  background-color: inherit;
+}
+.rightButtons :nth-child(3) {
+  background-color: rgb(27, 183, 110);
+}
+#upper > h3 {
+  color: rgb(160, 216, 234);
+  background-color: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cards {
+  margin-top: 10px;
+  width: 90vw;
+  margin: auto;
+}
+.cardsTop {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(170, 170, 187);
+  font-size: 15px;
+  font-weight: 600;
+  width: 88vw;
+  margin-bottom: 5px;
+}
+.cardsBody {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  height: 400px;
+  width: 90vw;
+  margin: auto;
+}
+.soloCard {
+  height: 130px;
+  width: 110px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 3px;
+  background-size: auto 115px;
+  background-repeat: repeat-x;
+  background-position: 100% 0;
+}
+.soloCard:hover {
+  transform: translateY(-2px);
+}
+.cardsBody .soloCard:nth-child(1) {
+  width: 220px;
+}
+
+.soloCard img {
+  height: 70px;
+}
+
+.cardsBody .soloCard:nth-child(1) .cardText {
+  background-color: rgb(197, 101, 121);
+}
+.cardsBody .soloCard:nth-child(2) .cardText {
+  background-color: #3a2845;
+}
+.cardsBody .soloCard:nth-child(3) .cardText {
+  background-color: #4946b0;
+}
+.cardsBody .soloCard:nth-child(4) .cardText {
+  background-color: #ff7000;
+}
+.cardsBody .soloCard:nth-child(5) .cardText {
+  background-color: #633875;
+}
+.cardsBody .soloCard:nth-child(6) .cardText {
+  background-color: #ab80b8;
+}
+.cardsBody .soloCard:nth-child(7) .cardText {
+  background-color: #51535a;
+}
+.cardsBody .soloCard:nth-child(8) .cardText {
+  background-color: #60aebb;
+}
+.cardText {
+  padding: 10px;
+}
+.cardText h6 {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+.cardText p {
+  color: rgb(191, 191, 194);
+  font-size: 10px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.ImageContainer {
+  width: 100vw;
+  margin: auto;
+  padding: 15px;
+  background-color: rgb(46, 48, 53);
+}
+.contInfo {
+  width: 85vw;
+  margin: auto;
+}
+.contHead {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(191, 191, 194);
+  color: rgb(170, 170, 187);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.contHead select {
+  background: transparent;
+  border: 0px;
+  outline: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #aaa;
+  scroll-behavior: smooth;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.contHead select option {
+  border: 0px;
+}
+.contIcon {
+  display: flex;
+  margin-left: 20px;
+}
+.contIcon img {
+  margin: 0 10px;
+}
+#main {
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto auto auto auto;
+}
+#main > div {
+  width: 250px;
+}
+#main img {
+  width: 100%;
+  height: 250px;
+}
+#main .imageContainer {
+  margin: 0;
+  padding-top: 15px;
+}
+#main .textContainer {
+  padding: 10px;
+  background-color: #858585;
+  margin: 0;
+}
+#main h6 {
+  color: #fff;
+  margin: 0;
+}
+#main .bottomContainer {
+  color: #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+#main .bottomContainer > div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#main .bottomContainer > div {
+  color: #bbb;
+}
+#main .bottomContainer > div :hover {
+  color: #fff;
+}
+#main .bottomContainer > div:nth-child(1) :hover {
+  color: greenyellow;
+}
+#main .bottomContainer > div p {
+  margin: 0;
+}
